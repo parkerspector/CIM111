@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body{
+background-color: green;
+font-family: 'Lato', sans-serif;
+}
+a{
+color: white;
+text-decoration: none;
+font-size: 24px;
+}
+a:hover{
+background-color: purple;
+}
+li{
+list-style: lower-alpha;
+}
+
+
+
+
+.textlinks{
+font-size: 16px;
+}
+
+#aboutme{
+font-family: monospace;
+box-decoration-break: slice;
+-webkit-box-decoration-break: slice;
+box-shadow: 8px 8px 10px 0 #ff1493, -5px -5px 5px 0 #00f, 5px 5px 15px 0 #ff0;
+}
+#honors{
+font-stretch: extra-expanded;
+}
+#address{
+font-kerning: normal;
+}
+.specialText{
+font-size: 20px;
+}
+#education{
+font-weight: lighter;
+}
+#courses{
+font-variant: inherit;
+}
