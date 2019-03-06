@@ -1,9 +1,10 @@
 <html>
 <head>
-<title>Box Model</title>
+<title>Travel with Parker</title>
 <style>
   h1{
     /* background-color: beige; */
+    text-align: center;
   }
   #mainTitle{
     width: auto;
@@ -36,6 +37,7 @@
     width: 600px;
     height: auto;
     margin: 0 auto;
+    background-color: blue;
   }
   #sect2{
     width: auto;
@@ -46,7 +48,7 @@
   #col1{
     width: 438px;
     height: 180px;
-    /* background-color: green; */
+    /* background-color: blue; */
     display: inline-block;
     padding: 10px;
   }
@@ -58,13 +60,13 @@
     padding: 10px;
   }
   #sect3{
-    marin-top: 20px;
+    margin-top: 20px;
     width: 610px;
     /* background-color: grey; */
     margin: 0 auto;
   }
   .sect1Images{
-    width: 300px;
+    width: 100%;
     display: grid;
       grid-template-columns: 1fr 1fr 1fr;
   }
@@ -83,7 +85,7 @@
     display: inline-block;
   }
   nav{
-    width: 400px;
+    width: 500px;
     /* background-color: grey; */
     margin: 0 auto;
   }
@@ -107,13 +109,32 @@
     color: green;
   }
 
+  #graduationPic{
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  #scotland{
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    background-color: blue;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    padding: 20px;
+  }
+
   </style>
 </head>
 
 <body>
-  <header id=top>
     <header>
-      <h1>Travel</h1>
+      <h1>Travel with Parker</h1>
       <nav>
         <ul>
           <li>
@@ -128,37 +149,39 @@
         </ul>
       </nav>
       </header>
-  </body>
 
 
 
     <main>
-      <img src="images/graduationpicture.jpeg" width="300" alt="Parker Graduation"> <br>
-      <section id="sect1">
+      <img id="graduationPic" src="images/graduationpicture.jpeg"  alt="Parker Graduation"> <br>
       <h1 id="mainTitle">About Me</h1>
       <p>Currently, I am a sophomore at the University of Miami majoring in creative advertising and double minoring in marketing and interactive media. One of my favorite hobbies is to travel with my family. Most recently, we went to Scotland, Spain and Colombia. Traveling with my family makes going to all these places so much better because I get to enjoy it with the people I love.</p>
-    </section>
-      </main>
-        <section id="sect1">
-          <div class="sect1captions">
-            <img class="sect1Images" src="images/arthurseat.jpg"
+
+
+
+      <h1><em>Edinburgh, Scotland</em></h1>
+      <div id="scotland">
+        <section>
+            <img class="sect1Images" src="images/arthurseat.jpg">
             <p> Arthur Seat during the day in December 2017 </p>
-            </div>
-            <section id="sect1">
-              <div class="sect1captions">
-                <img class="sect1Images" src="images/arthurseat1.jpg"
+
+          </section>
+            <section>
+                <img class="sect1Images" src="images/arthurseat1.jpg">
                 <p> On the way down from Arthurs seat; sun starting to set.</p>
-                </div>
-              <section id="sect1">
-                <div class="sect1captions">
-            <img class="sect1Images" src="images/scotlandst.jpg"
+            </section>
+            <section>
+            <img class="sect1Images" src="images/scotlandst.jpg">
             <p>A beautiful, colorful shot of a street in Edinburgh</p>
-            </div>
+            </section>
+          </div>
+        <h1><em>Madrid, Spain</em></h1>
         <section id="sect2">
           <div id="col1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
           <div id="col2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
           </<main>
           </section>
+        <h1><em>Cartegena, Colomobia</em></h1>
           <section id="sect3">
             <div class="sect3captions">
             <img class="sect3Images" src="https://farm4.staticflickr.com/3849/15178436890_00352ae76e_b.jpg">
@@ -179,6 +202,11 @@
                   </section>
 
 
+      </main>
+
+
+
+                </body>
 
 
 </html>
