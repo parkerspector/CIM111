@@ -1,0 +1,92 @@
+@import "desktop.css";
+#mainTitle{
+  width: auto;
+}
+
+#graduationPic{
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+#scotland{
+  width: 450px;
+  height: auto;
+  margin: 0 auto;
+  background-color: blue;
+  color: white;
+  display: block;
+  padding: 20px;
+}
+
+#spain{
+  width: 450px;
+  height: auto;
+  margin: 0 auto;
+  background-color: yellow;
+  color: red;
+  display: block;
+  padding: 20px;
+}
+
+#colombia{
+  width: 450px;
+  height: auto;
+  margin: 0 auto;
+  background-color: green;
+  color: white;
+  display: block;
+  padding: 20px;
+}
+
+header{
+  width: 100%;
+  height: 50px;
+  background-color: pink;
+  text-align: center;
+  margin: 0 auto;
+    /*margin: top/bottom left/right */
+}
+main{
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: magenta;
+    padding: 20px;
+    padding-top: 0px;
+}
+footer{
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  background-color: magenta;
+}
+
+.sect1Images{
+  width: 100%;
+
+}
+
+.sect2Images{
+  width: 100%;
+
+}
+
+.sect3Images{
+  width: 100%;
+}
+
+nav{
+  width: 100%;
+  background-color: grey;
+  margin: 0 auto;
+}
+
+nav ul li{
+  list-style: none;
+  display: block;
+  margin-right: 20px;
+}

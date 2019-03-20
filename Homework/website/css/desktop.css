@@ -1,0 +1,151 @@
+h1{
+  background-color: pink;
+  text-align: center;
+}
+#mainTitle{
+  width: auto;
+}
+header{
+  width: 960px;
+  height: 70px;
+  background-color: aqua;
+  text-align: center;
+  margin: 0 auto;
+  /* margin: top/bottom left/right; */
+}
+main{
+  width: 920px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: magenta;
+    padding: 20px;
+    padding-top: 0px;
+}
+footer{
+  width: 960px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: magenta;
+}
+#sect1{
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  background-color: blue;
+}
+#sect2{
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  background-color: yellow;
+}
+
+#sect3{
+  margin-top: 20px;
+  width: 610px;
+  background-color: green;
+  margin: 0 auto;
+}
+.sect1Images{
+  width: 100%;
+
+}
+
+.sect2Images{
+  width: 100%;
+
+}
+
+.sect3Images{
+  width: 100%;
+}
+
+nav{
+  width: 920px;
+  background-color: grey;
+  margin: 0 auto;
+}
+
+nav ul{
+  margin: -15px;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  color: pink;
+}
+
+#graduationPic{
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+#scotland{
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  background-color: blue;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  padding: 20px;
+}
+
+#spain{
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  background-color: yellow;
+  color: red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  padding: 20px;
+}
+
+#colombia{
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  background-color: green;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  padding: 20px;
+}
+
+#favorite{
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  background-color: maroon;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  padding: 20px;
+}

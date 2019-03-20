@@ -1,133 +1,10 @@
 <html>
 <head>
 <title>Travel with Parker</title>
+<link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width: 600px)">
+<link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 600px)">
 <style>
-  h1{
-    /* background-color: beige; */
-    text-align: center;
-  }
-  #mainTitle{
-    width: auto;
-  }
-  header{
-    width: 960px;
-    height: 50px;
-    /* background-color: blue; */
-    text-align: center;
-    margin: 0 auto;
-      /*margin: top/bottom left/right */
-  }
-  main{
-    width: 920px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      /* background-color: aqua; */
-      padding: 20px;
-      padding-top: 0px;
-  }
-  footer{
-    width: 960px;
-    height: 100px;
-    margin: 0 auto;
-  }
-  #sect1{
-    width: 600px;
-    height: auto;
-    margin: 0 auto;
-    background-color: blue;
-  }
-  #sect2{
-    width: auto;
-    height: 200px;
-    /* background-color: magenta; */
-  }
 
-  #col1{
-    width: 438px;
-    height: 180px;
-    /* background-color: blue; */
-    display: inline-block;
-    padding: 10px;
-  }
-  #col2{
-    width: 438px;
-    height: 180px;
-    /* background-color: lime; */
-    display: inline-block;
-    padding: 10px;
-  }
-  #sect3{
-    margin-top: 20px;
-    width: 610px;
-    /* background-color: grey; */
-    margin: 0 auto;
-  }
-  .sect1Images{
-    width: 100%;
-    display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-  }
-  .sect1captions{
-    width: 300px;
-    height: auto;
-    display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-  }
-  .sect3Images{
-    width: 300px;
-  }
-  .sect3captions{
-    width: 300px;
-    height: auto;
-    display: inline-block;
-  }
-  nav{
-    width: 500px;
-    /* background-color: grey; */
-    margin: 0 auto;
-  }
-
-  nav ul{
-    margin: -15px;
-  }
-
-  nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 20px;
-  }
-
-  nav ul li a{
-    color: black;
-    text-decoration: none;
-  }
-
-  nav ul li a:hover{
-    color: green;
-  }
-
-  #graduationPic{
-    width: 300px;
-    margin: 0 auto;
-    display: block;
-  }
-
-  #scotland{
-    width: 600px;
-    height: auto;
-    margin: 0 auto;
-    background-color: blue;
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
-    padding: 20px;
-  }
 
   </style>
 </head>
@@ -160,11 +37,11 @@
 
 
       <h1><em>Edinburgh, Scotland</em></h1>
+
       <div id="scotland">
         <section>
             <img class="sect1Images" src="images/arthurseat.jpg">
             <p> Arthur Seat during the day in December 2017 </p>
-
           </section>
             <section>
                 <img class="sect1Images" src="images/arthurseat1.jpg">
@@ -176,30 +53,65 @@
             </section>
           </div>
         <h1><em>Madrid, Spain</em></h1>
-        <section id="sect2">
-          <div id="col1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-          <div id="col2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-          </<main>
-          </section>
+        <div id="spain">
+        <section >
+          <img class="sect2Images" src="images/palaciorealdemadrid.jpg">
+          <p>Palacio Real de Madrid: Royal Palace of Madrid</p>
+        </section>
+        <section >
+          <img class="sect2Images" src="images/mercadodesanmiguel.jpg">
+          <p>Mercado de San Miguel: Market of San Miguel</p>
+        </section>
+        <section>
+          <img class="sect2Images" src="images/templededebod.jpg">
+          <p>Temple de Debod: Temple of Debod</p>
+        </section>
+        <section >
+          <img class="sect2Images" src="images/elretiropark.jpg">
+          <p>El Buen Retiro Park: Park of the Pleasant Retreat</p>
+        </section>
+      </div>
+
         <h1><em>Cartegena, Colomobia</em></h1>
-          <section id="sect3">
-            <div class="sect3captions">
-            <img class="sect3Images" src="https://farm4.staticflickr.com/3849/15178436890_00352ae76e_b.jpg">
-            <p>"Triple Falls in Dupont Forest" by pmuellr is licensed under CC BY 2.0. To view a copy of this license, visit: https://creativecommons.org/licenses/by/2.0</p>
-            </div>
-            <div class="sect3captions">
-              <img class="sect3Images" src="https://farm4.staticflickr.com/3849/15178436890_00352ae76e_b.jpg">
-              <p>"Triple Falls in Dupont Forest" by pmuellr is licensed under CC BY 2.0. To view a copy of this license, visit: https://creativecommons.org/licenses/by/2.0</p>
-              </div>
-              <div class="sect3captions">
-                <img class="sect3Images" src="https://farm4.staticflickr.com/3849/15178436890_00352ae76e_b.jpg">
-                <p>"Triple Falls in Dupont Forest" by pmuellr is licensed under CC BY 2.0. To view a copy of this license, visit: https://creativecommons.org/licenses/by/2.0</p>
-                </div>
-                <div class="sect3captions">
-                  <img class="sect3Images" src="https://farm4.staticflickr.com/3849/15178436890_00352ae76e_b.jpg">
-                  <p>"Triple Falls in Dupont Forest" by pmuellr is licensed under CC BY 2.0. To view a copy of this license, visit: https://creativecommons.org/licenses/by/2.0</p>
-                  </div>
-                  </section>
+        <div id="colombia">
+          <section>
+            <img class="sect3Images" src="images/bocagrande.jpg">
+            <p>Bocagrande: Upmarket area in Cartegena, Colombia</p>
+          </section>
+          <section>
+            <img class="sect3Images" src="images/rosarioislands.jpg">
+            <p>Islas del Rosario: The Rosario Islands</p>
+          </section>
+          <section>
+            <img class="sect3Images" src="images/laspalenqueras.jpg">
+            <p>Las Palenqueras: Fruit sellers with my sister</p>
+          </section>
+          <section>
+            <img class="sect3Images" src="images/colombiast.jpg">
+            <p>Colorful buildings on the street in Cartegena</p>
+          </section>
+          </div>
+
+          <h1><em>Favorite Memories</em></h1>
+          <div id="favorite">
+            <section>
+              <h3>Scotland</h3>
+            <p> In Edinburgh, my favorite memory was going to Arthur's seat. We went to Aruthur's seat the day after it snowed and snow only means one thing...snowballs. So of course my older brother just had to create a snowball to throw at our older sister, the only problem was she was a moving target and his aim wasn't the best. He ended up pegging a stranger that was behind my sister and we all cracked up along with the random guy we just hit.</p>
+          </section>
+          <section>
+          <h3>Spain</h3>
+        <p> In Madrid, my favorite memory was seeing the 80 sculptures of Las Meninas around the city. Everytime my mom would see a Las Menias, she would take a picture, even if it meant having to cross the street to get it. Her goal was to see how many she could get a picture of, in the hopes to find almost all 80. It was just nice to see my mom get all happy over something as little as a statue.</p>
+      </section>
+      <section>
+        <h3>Colombia</h3>
+      <p> In Cartegena, my favorite memory was going out on christmas eve with my siblings. Both my siblings are older, so when we do get the chance to go out together, I feel closer to them. When we went out that night, we also ran into multiple families from our town in New York and we made it a night to remember.</p>
+    </section>
+    <section>
+      <h3>Overall</h3>
+    <p> In the end, all of these trips were amazing because I got to spend time with my family and explore the world. We love traveling, we even booked our trip for December break where we will be going to Amsterdam and France to ski.</p>
+  </section>
+
+          </div>
 
 
       </main>
