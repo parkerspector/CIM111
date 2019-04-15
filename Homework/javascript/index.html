@@ -6,8 +6,44 @@
     <style>
     li{
       width: 100px;
-      height: 80px;
+      height: 100px;
       background-color: pink;
+      margin: 0 auto;
+      list-style: none;
+    }
+    #mouseOverOut{
+      width: 760px;
+      height: 20px;
+    }
+    #toggleInfo{
+      width: 760px;
+      height: 20px;
+    }
+    h1{
+      text-align: center;
+      color: white;
+      width: 760px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: teal;
+    }
+    p{
+      text-align: center;
+      color: white;
+    margin: 0 auto;
+    background-color: magenta;
+    }
+    h4{
+      color: white;
+      text-align: center;
+      margin: 0 auto;
+      background-color: magenta;
+    }
+    images{
+      margin: 0 auto;
+    }
+    body{
+      text-align: center;
     }
     </style>
 
@@ -23,7 +59,7 @@
 (click to hide)</p>
 </div>
 
-    <h1 id="mouseOverOut">Mouse over and change background</h1>
+    <p id="mouseOverOut">Mouse over and change background</p>
 
     <h1 id="toggle">Directions</h1>
     <p id="toggleInfo">This how to prepare your cookies</p>
@@ -73,11 +109,11 @@
         });
 
         $("#info1").click(function(){
-          $("#replaceText").html("<h4>1. Heat oven to 375 degrees F (or 350 degrees F for dark or nonstick cookie sheet). Stir cookie mix, softened butter and egg in medium bowl until soft dough forms.</h4>");
+          $("#replaceText").html("<img src='images/oven375.jpeg' width='600'<br></br><h4>1. Heat oven to 375 degrees F (or 350 degrees F for dark or nonstick cookie sheet). Stir cookie mix, softened butter and egg in medium bowl until soft dough forms.</h4>");
         });
 
         $("#info2").click(function(){
-          $("#replaceText").html("<h4>2. Drop dough by rounded teaspoonfuls 2 inches apart onto ungreased cookie sheet. (For 2 dozen larger cookies, drop by rounded tablespoonfuls.</h4>");
+          $("#replaceText").html("<img src='images/doughballs.jpeg' width='600'<br></br><h4>2. Drop dough by rounded teaspoonfuls 2 inches apart onto ungreased cookie sheet. (For 2 dozen larger cookies, drop by rounded tablespoonfuls.</h4>");
         });
 
         $("#info3").click(function(){
@@ -85,11 +121,11 @@
         });
 
         $("#info4").click(function(){
-          $("#replaceText").html("<h4>Betty's Tips: To prepare with vegetable oil, make dough using 1/3 cup oil, 2 tablespoons water and 1 egg. Chocolate Chip Cookies with Nuts: Stir 1/3 cup coarsely chopped nuts into cookie dough.</h4>");
+          $("#replaceText").html("<img src='images/oven375.jpg' width='600'<p><h4>Betty's Tips:</h4>To prepare with vegetable oil, make dough using 1/3 cup oil, 2 tablespoons water and 1 egg. Chocolate Chip Cookies with Nuts: Stir 1/3 cup coarsely chopped nuts into cookie dough.</p>");
         });
 
         $("#picture").click(function(){
-            $("#replaceText").html("<img src='https://images-gmi-pmc.edge-generalmills.com/5504a4d4-ac62-4e63-b475-563ba492ccff.jpg' width='300'><p><h5>Betty Crocker Chocolate Chip Cookies</h5></p>");
+            $("#replaceText").html("<img src='images/bettycrockercookies.jpeg' width='600'><p><h5>Betty Crocker Chocolate Chip Cookies</h5></p>");
           });
 
         $("#info5").click(function(){

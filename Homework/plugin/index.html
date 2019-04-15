@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<style>
+  body{
+    background-color: red;
+  }
+  h1{
+    text-align: center;
+    width: 560px;
+    height: 40px;
+    margin: 0 auto;
+     background-color: yellow;
+     font-family: 'Quicksand', sans-serif;
+     color: blue;
+  }
+  h4{
+    text-align: center;
+    color: green;
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: yellow;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+
+</style>
+
+        <head>
+            <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+            <!-- jQuery -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+
+            <!-- nanogallery2 -->
+            <link  href="https://unpkg.com/nanogallery2@2.4.2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+            <script  type="text/javascript" src="https://unpkg.com/nanogallery2@2.4.2/dist/jquery.nanogallery2.min.js"></script>
+        </head>
+        <body>
+
+              <h1>Parker's Trip to Madrid</h1>
+              <p><h4><i>My name is Parker Spector-Salwen and I love to travel. These are a few photos from my trip with my family to Madrid.</i><br></br>In Madrid, there is so much to do.</h4></p>
+
+
+              <!-- ### position of the gallery ### -->
+              <div id="nanogallery2">gallery_made_with_nanogallery2</div>
+
+              <script>
+                 jQuery(document).ready(function () {
+
+                    jQuery("#nanogallery2").nanogallery2( {
+                        // ### gallery settings ###
+                        thumbnailHeight:  600,
+                        thumbnailWidth:   600,
+
+
+
+                        // ### gallery content ###
+                        items: [
+                            { src: 'images/elretiropark.jpg', srct: 'images/elretiropark.jpg', title: 'El Retiro Park' },
+                            { src: 'images/templededebod.jpg', srct: 'images/templededebod.jpg', title: 'Temple de Debod' },
+                            { src: 'images/mercadodesanmiguel.jpg', srct: 'images/mercadodesanmiguel.jpg', title: 'Mercado de San Miguel' },
+                            { src: 'images/palaciorealdemadrid.jpg', srct: 'images/palaciorealdemadrid.jpg', title: 'Placio Real de Madrid' },
+                            { src: 'images/streetsofmadrid.JPG', srct: 'images/streetsofmadrid.JPG', title: 'Street view of Madrid' },
+                            { src: 'images/resturaconten.JPG', srct: 'images/resturaconten.JPG', title: 'Restura Con Ten' }
+                          ]
+                      });
+                  });
+              </script>
+
+          </body>
+      </html>
