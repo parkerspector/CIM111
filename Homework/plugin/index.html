@@ -2,6 +2,31 @@
 
 <html>
 <style>
+nav{
+  width: 700px;
+  background-color: green;
+  margin: 0 auto;
+}
+
+nav ul{
+  margin: 0 auto;
+  width: 700px;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a{
+  color: yellow;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  color: blue;
+}
   body{
     background-color: red;
   }
@@ -23,6 +48,40 @@
     background-color: yellow;
     font-family: 'Quicksand', sans-serif;
   }
+  h3{
+    text-align: center;
+  }
+h2{
+  text-align: center;
+  margin: 0 auto;
+  background-color: yellow;
+  color: blue;
+  height: 30px;
+  width: 400px;
+}
+header{
+  text-align: center;
+  margin: 0 auto;
+  background-color: green;
+  color: yellow;
+  height:
+}
+#work{
+  background-color: red;
+  color: yellow;
+}
+#contact{
+  background-color: red;
+  color: yellow;
+}
+p{
+  text-align: center;
+  margin: 0 auto;
+}
+#favorite{
+  background-color: yellow;
+  color: green;
+}
 
 
 </style>
@@ -38,14 +97,38 @@
             <script  type="text/javascript" src="https://unpkg.com/nanogallery2@2.4.2/dist/jquery.nanogallery2.min.js"></script>
         </head>
         <body>
-
-              <h1>Parker's Trip to Madrid</h1>
-              <p><h4><i>My name is Parker Spector-Salwen and I love to travel. These are a few photos from my trip with my family to Madrid.</i><br></br>In Madrid, there is so much to do.</h4></p>
+            <h1>Parker's Trip to Madrid</h1>
+            <header>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#madrid">About Madrid</a>
+                </li>
+                <li>
+                  <a href="#spain">Pictures</a>
+                </li>
+                <li>
+                  <a href="#favorite">Favorite Memories</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact Info</a>
+                </li>
+                <li>
+                  <a href="#work">Other Work</a>
+                </li>
+              </ul>
+            </nav>
+            </header>
+            <div id="madrid">
+              <a href=https://www.gocartours.com/blog/brief-history-madrid>
+              <p><h4><i>Madrid is considered one of Europes most progressive, modern, and beautiful cities. It has a vibrant local arts culture and boisterous nightlife, along with constant reminders of the cities rich history. It is deservedly renowned as one of the continents best tourists destinations.</i><br></a>
+              </br>My name is Parker Spector-Salwen and I love to travel. These are a few photos from my trip with my family to Madrid.</h4></p>
 
 
               <!-- ### position of the gallery ### -->
               <div id="nanogallery2">gallery_made_with_nanogallery2</div>
 
+              <div id="spain">
               <script>
                  jQuery(document).ready(function () {
 
@@ -68,6 +151,27 @@
                       });
                   });
               </script>
-
+            </div>
+              <br></br>
+              <div id="favorite">
+                <section>
+              <h2>Favorite Memory</h2>
+              <p>In Madrid, my favorite memory was seeing the 80 sculptures of Las Meninas around the city. Everytime my mom would see a Las Menias, she would take a picture, even if it meant having to cross the street to get it. Her goal was to see how many she could get a picture of, in the hopes to find almost all 80. It was just nice to see my mom get all happy over something as little as a statue.</p>
+            </div>
+              <br></br>
+          </section>
+          <div id="contact">
+            <section>
+              <h2>Contact Information</h2>
+          <h3><em>Parker Spector-Salwen</em></h3>
+            <p>Number: (646)-687-6844</p>
+            <p>Email: pxs584@miami.edu</p>
+          </section>
+          </div>
+          <br></br>
+          <div id="work">
+            <p><a href="https://pxs584.myportfolio.com">Click here to go to my protfolio</a></p>
+          </div>
           </body>
+
       </html>
