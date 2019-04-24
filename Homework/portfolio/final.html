@@ -9,8 +9,70 @@
     <!-- nanogallery2 -->
     <link  href="https://unpkg.com/nanogallery2@2.4.2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
     <script  type="text/javascript" src="https://unpkg.com/nanogallery2@2.4.2/dist/jquery.nanogallery2.min.js"></script>
-
 </head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+body{
+background-color: grey;
+font-family: 'Lora', serif;
+}
+a{
+color: pink;
+text-decoration: none;
+font-size: 24px;
+}
+a:hover{
+background-color: white;
+}
+header{
+  width: 400px;
+  height: 200px;
+  background-color: none;
+  text-align: center;
+  margin: 0 auto;
+  /* margin: top/bottom left/right; */
+}
+li{
+  list-style: none;
+}
+h1{
+  background-color: pink;
+  text-align: center;
+  color: white;
+}
+h2{
+  background-color: pink;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+#mainTitle{
+  width: auto;
+}
+#aboutme{
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+#resume{
+  text-align: center;
+  margin: 0 auto;
+}
+#work{
+  text-align: center;
+  margin: 0 auto;
+}
+#contact{
+text-align: center;
+margin: 0 auto;
+color: white;
+}
+#portfolio{
+  text-align: center;
+  margin: 0 auto;
+}
+</style>
 <body>
     <h1>Parker's Trip to Madrid</h1>
     <header>
@@ -22,66 +84,94 @@
         <li>
           <a href="#resume">Resume</a>
         </li>
-        <li>
+        <li id="workClick">
           <a href="#work">Work</a>
         </li>
         <li>
           <a href="#contact">Contact Info</a>
         </li>
         <li>
-          <a href="#portfolio">Other website</a>
+          <a href="#portfolio">Other resources</a>
         </li>
       </ul>
     </nav>
     </header>
+    <h2> About Parker</h2>
+    <div id="aboutme">
+      <p>Currently, I am a sophomore at the University of Miami majoring in creative advertising and double minoring in marketing and interactive media. I want to explore careers that will help me grow professionally and intellectually. As a hard working, determined individual, I will strive not only to meet expectations, but to exceed them.</p>
+  </div>
+  <h2>Resume</h2><br>
+<div id="resume">
+    <img src="images/resume.jpg" width="600" alt="My 2019 Resume"> <br>
+</div>
+<div id="work">
+  <br><h2> Graphic Design </h2><br>
+  <img src="images/hangover1.jpg" width="400" alt="Hangover Billboard #1"> <br>
+</br><img src="images/hangover2.jpg" width="400" alt="Hangover Billboard #2"> <br>
+</br><img src="images/hangover3.jpg" width="400" alt="Hangover Billboard #3"> <br></br>
 
-    <img src="images/resume.jpg" width="300" alt="My 2019 Resume"> <br>
-  <h2> About Parker</h2>
-    <p>WRITE PARAGRAPH</p>
-<h1> Graphic Design</h1>
+</br><h2> Copywriting </h2><br>
+  <img src="images/copywriting1.jpg" width="400" alt="Hangover Billboard #1"> <br>
+</br><img src="images/copywriting2.jpg" width="400" alt="Hangover Billboard #2"> <br>
+</br><img src="images/copywriting3.jpg" width="400" alt="Hangover Billboard #3"> <br>
+<br><h2> Re-branding Campaign: Logo Design</h2><br>
       <!-- ### position of the gallery ### -->
       <div id="nanogallery2">gallery_made_with_nanogallery2</div>
 
 
-      <script>
-         jQuery(document).ready(function () {
 
-            jQuery("#nanogallery2").nanogallery2( {
-                // ### gallery settings ###
-                thumbnailHeight:  600,
-                thumbnailWidth:   600,
+          </div>
+    </br><h2>Contact Information</h2><br>
+      <div id="contact">
+        <img src="images/graduationpicture.jpeg" width="300" alt="Parker Graduation"> <br>
+        <p>Number: (646)-687-6844</p>
+        <p>Email: pxs584@miami.edu</p>
+      </div>
+      <h2>Other resources</h2>
+      <div id="portfolio">
+        <p><a href="https://www.linkedin.com/in/spectorsalwen">Click Here to go to my Linkedin</a></p>
+        <p><a href="https://pxs584.myportfolio.com">Click Here to go to my Portfolio</a></p>
+</div>
+<script>
+   jQuery(document).ready(function () {
 
+$("#work").hide();
 
-                // ### gallery content ###
-                items: [
-                    { src: 'images/hangover1.jpg', srct: 'images/hangover1.jpg', title: 'Adobe Illustrator Hangover Billboard #1' },
-                    { src: 'images/hangover2.jpg', srct: 'images/hangover2.jpg', title: 'Adobe Illustrator Hangover Billboard #2' },
-                    { src: 'images/hangover3.jpg', srct: 'images/hangover3.jpg', title: 'Adobe Illustrator Hangover Billboard #3' }
-                  ]
-              });
-          });
-          </script>
-            <h1> Copywriting </h1>
-      <!-- ### position of the gallery ### -->
-      <div id="nanogallery2">gallery_made_with_nanogallery2</div>
-
-
-      <script>
-         jQuery(document).ready(function () {
-
-            jQuery("#nanogallery2").nanogallery2( {
-                // ### gallery settings ###
-                thumbnailHeight:  600,
-                thumbnailWidth:   600,
+      $("#workClick").click(function(){
+        $("#work").toggle();
+      });
 
 
-                // ### gallery content ###
-                items: [
-                    { src: 'images/copywriting1.jpg', srct: 'images/copywriting1.jpg', title: 'TV spot for my 360 campaign for Converse' },
-                    { src: 'images/copywriting2.jpg', srct: 'images/copywriting2.jpg', title: 'TV spot for my 360 campaign for Converse' },
-                    { src: 'images/copywriting3.jpg', srct: 'images/copywriting3.jpg', title: 'TV spot for my 360 campaign for In N Out' }
-                  ]
-              });
-          });
-      </script>
+      jQuery("#nanogallery2").nanogallery2( {
+          // ### gallery settings ###
+          thumbnailHeight:  400,
+          thumbnailWidth:   400,
+
+
+          // ### gallery content ###
+          items: [
+              { src: 'images/1.jpg', srct: 'images/1.jpg', title: 'Gift of Life' },
+              { src: 'images/2.jpg', srct: 'images/2.jpg', title: 'Gift of Life' },
+              { src: 'images/3.jpg', srct: 'images/3.jpg', title: 'Gift of Life' },
+              { src: 'images/4.jpg', srct: 'images/4.jpg', title: 'Gift of Life' },
+              { src: 'images/5.jpg', srct: 'images/5.jpg', title: 'Gift of Life' },
+              { src: 'images/6.jpg', srct: 'images/6.jpg', title: 'Gift of Life' },
+              { src: 'images/7.jpg', srct: 'images/7.jpg', title: 'Gift of Life' },
+              { src: 'images/8.jpg', srct: 'images/8.jpg', title: 'Gift of Life' },
+              { src: 'images/9.jpg', srct: 'images/9.jpg', title: 'Gift of Life' },
+              { src: 'images/10.jpg', srct: 'images/10.jpg', title: 'Gift of Life' },
+              { src: 'images/11.jpg', srct: 'images/11.jpg', title: 'Gift of Life' },
+              { src: 'images/12.jpg', srct: 'images/12.jpg', title: 'Gift of Life' },
+              { src: 'images/13.jpg', srct: 'images/13.jpg', title: 'Gift of Life' },
+              { src: 'images/14.jpg', srct: 'images/14.jpg', title: 'Gift of Life' },
+              { src: 'images/15.jpg', srct: 'images/15.jpg', title: 'Gift of Life' },
+              { src: 'images/16.jpg', srct: 'images/16.jpg', title: 'Gift of Life' },
+              { src: 'images/17.jpg', srct: 'images/17.jpg', title: 'Gift of Life' },
+              { src: 'images/18.jpg', srct: 'images/18.jpg', title: 'Gift of Life' },
+              { src: 'images/19.jpg', srct: 'images/19.jpg', title: 'Gift of Life' }
+            ]
+        });
+    });
+    </script>
+</body>
     </html>
