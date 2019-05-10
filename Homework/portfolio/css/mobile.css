@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import "desktop.css";
+
+body{
+background-color: grey;
+font-family: 'Lora', serif;
+}
+a{
+color: pink;
+text-decoration: none;
+font-size: 24px;
+}
+a:hover{
+background-color: white;
+}
+header{
+  width: 400px;
+  height: 200px;
+  background-color: none;
+  text-align: center;
+  margin: 0 auto;
+  /* margin: top/bottom left/right; */
+}
+li{
+  list-style: none;
+}
+h1{
+  background-color: pink;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+h2{
+  background-color: pink;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+#mainTitle{
+  width: auto;
+}
+#aboutme{
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+#resume{
+  text-align: center;
+  margin: 0 auto;
+}
+#work{
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+#contact{
+text-align: center;
+margin: 0 auto;
+color: white;
+}
+#portfolio{
+  text-align: center;
+  margin: 0 auto;
+}
